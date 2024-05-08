@@ -24,8 +24,7 @@ def predict():
     smoker =int( request.form['smoker'])
     region =int( request.form['region'])
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
     # Perform data preprocessing (if necessary)
     # For example, encode categorical variables and scale numerical features
 
@@ -34,3 +33,6 @@ if __name__ == '__main__':
 
     # Return the prediction as JSON response
     return jsonify({'prediction': prediction})
+
+if __name__ == '__main__':
+    app.run(debug=True)
